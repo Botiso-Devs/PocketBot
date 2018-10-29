@@ -7,7 +7,7 @@ bot.on("ready", () => {
 bot.user.setActivity("TwinFactions | -help", {type: "PLAYING"})
 });
   
-bot.on("message" (message) => {
+bot.on("message", (message) => {
   if(message.content === "-nickname") {
      message.member.setNickname("Player •" + `${message.author.username}`)
      message.channel.send("You Have Been Given The Tag Player")
